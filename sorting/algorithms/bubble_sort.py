@@ -1,5 +1,9 @@
+# third party packages and modules
+
+# standard library packages and modules
 import array as arr
 
+# internal packages and modules
 import utils.utility as util
 
 def bubble_sort(arr):
