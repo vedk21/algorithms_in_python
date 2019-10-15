@@ -6,18 +6,20 @@ import array as arr
 # internal packages and modules
 import algorithms.bubble_sort as bSort
 import algorithms.selection_sort as sSort
+import algorithms.insertion_sort as iSort
 
 # create a dictionary to save all available sorting funations options
 sorting_algorithms_dict = {
     'bubble': bSort.bubble_sort,
-    'selection': sSort.selection_sort
+    'selection': sSort.selection_sort,
+    'insertion': iSort.insertion_sort
 }
 
 # get options from created dictionary
 sorting_options_available = tuple(sorting_algorithms_dict.keys())
 
 # sample array for testing
-arr = arr.array('i', [14, 9, 18, 4, 3, 2, 8])
+arr = arr.array('i', [14, 9, 18, 4, 3, 2, 18])
 
 if __name__ == '__main__':
 
