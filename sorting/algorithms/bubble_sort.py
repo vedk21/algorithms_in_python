@@ -4,14 +4,13 @@
 import array as arr
 
 # internal packages and modules
-import utils.utility as util
 
 def bubble_sort(arr):
     for i in range(len(arr) - 1):
         is_swapped = False
         for j in range(i+1, len(arr)):
             if arr[i] > arr[j]:
-                arr = util.swap(arr, i, j)
+                arr[j], arr[i] = arr[i], arr[j]
                 is_swapped = True
         if not is_swapped:
             break

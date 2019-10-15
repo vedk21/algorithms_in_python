@@ -4,7 +4,6 @@
 import array as arr
 
 # internal packages and modules
-import utils.utility as util
 
 def selection_sort(arr):
     for i in range(len(arr)):
@@ -16,7 +15,7 @@ def selection_sort(arr):
 
         # don't swap if min_index is same as we started with
         if min_index != i:
-            arr = util.swap(arr, i, min_index)
+            arr[min_index], arr[i] = arr[i], arr[min_index]
 
     return arr
 
