@@ -8,13 +8,15 @@ import algorithms.bubble_sort as bSort
 import algorithms.selection_sort as sSort
 import algorithms.insertion_sort as iSort
 import algorithms.merge_sort as mSort
+import algorithms.radix_sort as rSort
 
 # create a dictionary to save all available sorting funations options
 sorting_algorithms_dict = {
     'bubble': bSort.bubble_sort,
     'selection': sSort.selection_sort,
     'insertion': iSort.insertion_sort,
-    'merge': mSort.merge_sort
+    'merge': mSort.merge_sort,
+    'radix': rSort.radix_sort
 }
 
 # get options from created dictionary
